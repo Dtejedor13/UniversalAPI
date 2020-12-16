@@ -4,6 +4,70 @@
     "\\\\rto.de\\Home-Daten\\Home\\D.Tejedor\\Eigene Dateien\\GitHub\\UniversalAPI\\UniversalAPI\\UniversalAPI.csproj": {}
   },
   "projects": {
+    "\\\\rto.de\\Home-Daten\\Home\\D.Tejedor\\Eigene Dateien\\GitHub\\UniversalAPI\\EFDataAcsess\\EFDataAcsess.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "\\\\rto.de\\Home-Daten\\Home\\D.Tejedor\\Eigene Dateien\\GitHub\\UniversalAPI\\EFDataAcsess\\EFDataAcsess.csproj",
+        "projectName": "EFDataAcsess",
+        "projectPath": "\\\\rto.de\\Home-Daten\\Home\\D.Tejedor\\Eigene Dateien\\GitHub\\UniversalAPI\\EFDataAcsess\\EFDataAcsess.csproj",
+        "packagesPath": "C:\\Users\\D.tejedor\\.nuget\\packages\\",
+        "outputPath": "\\\\rto.de\\Home-Daten\\Home\\D.Tejedor\\Eigene Dateien\\GitHub\\UniversalAPI\\EFDataAcsess\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\D.tejedor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\NuGetDefaults.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://baget.rto.de/v3/index.json": {},
+          "http://rtosnuget.rto.de/nuget": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "\\\\rto.de\\Home-Daten\\Home\\D.Tejedor\\Eigene Dateien\\GitHub\\UniversalAPI\\UniversalAPI\\UniversalAPI.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -32,7 +96,11 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "projectReferences": {}
+            "projectReferences": {
+              "\\\\rto.de\\Home-Daten\\Home\\D.Tejedor\\Eigene Dateien\\GitHub\\UniversalAPI\\EFDataAcsess\\EFDataAcsess.csproj": {
+                "projectPath": "\\\\rto.de\\Home-Daten\\Home\\D.Tejedor\\Eigene Dateien\\GitHub\\UniversalAPI\\EFDataAcsess\\EFDataAcsess.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -43,6 +111,16 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.AspNet.WebApi.Cors": {
+              "target": "Package",
+              "version": "[5.2.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
