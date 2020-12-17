@@ -55,6 +55,8 @@ namespace UniversalAPI.Controllers
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
+            var itemToRemove = DBClone.Single(r => r.ID == id);
+            DBClone.Remove(itemToRemove);
         }
     }
 }

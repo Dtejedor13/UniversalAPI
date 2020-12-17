@@ -10,6 +10,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using EFDataAcsess;
 using Microsoft.AspNetCore.Cors;
+using Microsoft.AspNetCore.Http;
 
 namespace UniversalAPI
 {
@@ -31,11 +32,6 @@ namespace UniversalAPI
             {
                 c.AddPolicy("AllowOrigin", options => options.AllowAnyOrigin());
             });
-
-            //services.AddCors(c =>
-            //{
-            //    c.AddPolicy("AllowOrigin", options => options.WithOrigins("https://localhost:44342"));
-            //});
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -54,8 +50,8 @@ namespace UniversalAPI
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
-            app.UseCors(options => options.AllowAnyOrigin());
-            //app.UseCors(options => options.WithOrigins("https://localhost:44342")); // website
+            //app.UseCors(options => options.AllowAnyOrigin());
+            app.UseCors(options => options.WithOrigins("http://localhost:8081")); // website
 
             app.UseRouting();
 
