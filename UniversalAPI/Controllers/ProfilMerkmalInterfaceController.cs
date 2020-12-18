@@ -8,18 +8,25 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace UniversalAPI.Controllers
 {
-    [Route("api/parent")]
+    [Route("api/if")]
     [ApiController]
-    public class ProfilMerkmalParentAndPosController : ControllerBase
+    public class ProfilMerkmalInterfaceController : ControllerBase
     {
-        // GET: api/<ProfilMerkmalParentAndPosController>
         [HttpGet]
-        public List<string> Get()
+        public List<ProfilMerkmalInterfaceDynamicObjectModel> Get()
         {
-            return null;
+            List<ProfilMerkmalInterfaceDynamicObjectModel> returnList = new List<ProfilMerkmalInterfaceDynamicObjectModel>();
+
+            foreach (var element in DataBaseCsharp.ListofMerkmale)
+            {
+                if (element.Delete == false)
+                {
+                    returnList.Add(new ProfilMerkmalInterfaceDynamicObjectModel(element.meta.ID, element.meta.Bez));        
+                }
+            }
+            return returnList;
         }
 
-        // GET api/<ProfilMerkmalParentAndPosController>/5
         [HttpGet("{id}")]
         public string[] Get(int id)
         {
@@ -27,26 +34,23 @@ namespace UniversalAPI.Controllers
 
             foreach (var element in DataBaseCsharp.ListofMerkmale)
             {
-                if (element.meta.Parent == id)
+                if (element.meta.Parent == id && element.Delete == false)
                     returnedList.Add(element.meta.Bez);
             }
 
             return returnedList.ToArray();
         }
 
-        // POST api/<ProfilMerkmalParentAndPosController>
         [HttpPost]
         public void Post([FromBody] string value)
         {
         }
 
-        // PUT api/<ProfilMerkmalParentAndPosController>/5
         [HttpPut("{id}")]
         public void Put(int id, [FromBody] string value)
         {
         }
 
-        // DELETE api/<ProfilMerkmalParentAndPosController>/5
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
