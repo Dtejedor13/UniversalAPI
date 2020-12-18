@@ -11,6 +11,7 @@ using Microsoft.Extensions.Hosting;
 using EFDataAcsess;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 
 namespace UniversalAPI
 {
@@ -28,10 +29,12 @@ namespace UniversalAPI
         {
             services.AddControllersWithViews();
             services.AddDbContext<ProfilMerkmaleContext>();
-            services.AddCors(c =>
-            {
-                c.AddPolicy("AllowOrigin", options => options.AllowAnyOrigin());
-            });
+            services.AddCors();
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
+            //services.AddCors(c =>
+            //{
+            //    c.AddPolicy("AllowOrigin", options => options.AllowAnyOrigin());
+            //});
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -51,7 +54,7 @@ namespace UniversalAPI
             app.UseStaticFiles();
 
             //app.UseCors(options => options.AllowAnyOrigin());
-            app.UseCors(options => options.WithOrigins("http://localhost:8081")); // website
+            app.UseCors(options => options.WithOrigins("http://localhost:8081").AllowAnyMethod().AllowAnyOrigin().AllowAnyHeader()); // website
 
             app.UseRouting();
 

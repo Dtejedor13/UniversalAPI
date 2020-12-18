@@ -1,62 +1,87 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Cors;
+using System.Net;
+using System.Net.Http;
 using Microsoft.AspNetCore.Mvc;
-
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace UniversalAPI.Controllers
 {
-    //[EnableCors(origins: "*", headers: "*", methods: "*", exposedHeaders: "X-My-Header")]
     [Route("api/pm")]
     [ApiController]
     public class ProfilMerkmalController : ControllerBase
     {
-        List<ProfilMerkmalModel> DBClone = DataBaseCsharp.ListofMerkmale; // get Copy from Database
-
-        // GET: api/pm
+        /// <summary>
+        /// Get All Items 
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         public List<ProfilMerkmalModel> Get()
         {
-            return DBClone;
+            return DataBaseCsharp.ListofMerkmale.ToList();
         }
 
-        // GET api/pm5
+        /// <summary>
+        /// Get One Item by ID
+        /// </summary>
+        /// <param name="id">ID</param>
+        /// <returns></returns>
         [HttpGet("{id}")]
         public ProfilMerkmalModel Get(int id)
         {
-            return DBClone.Where(x => x.ID == id).FirstOrDefault();
+            return DataBaseCsharp.ListofMerkmale.Where(x => x.ID == id).FirstOrDefault();
         }
 
-        // POST api/<ProfilMerkmalController>
-        [HttpPost]
-        public void Post(ProfilMerkmalModel value)
+        /// <summary>
+        /// Insert new Profilmerkmal
+        /// </summary>
+        /// <param name="value">Object ProfilmerkmalModel</param>
+        [HttpPut]
+        public void Put(ProfilMerkmalModel value)
         {
-            DBClone.Add(value);
+            DataBaseCsharp.ListofMerkmale.Add(value);
         }
 
-        // PUT api/<ProfilMerkmalController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] ProfilMerkmalModel value)
+        /// <summary>
+        /// Update Profilmerkmal 
+        /// </summary>
+        /// <param name="value">Object ProfilmerkmalModel</param>
+        /// <returns></returns>
+        [HttpPost()]
+        public HttpResponseMessage Post([FromBody] ProfilMerkmalModel value)
         {
-            for (int i = 0; i < DBClone.Count; i++)
+            var updatedItem = DataBaseCsharp.ListofMerkmale.FirstOrDefault(x => x.ID == value.ID);
+
+            if (updatedItem != null)
             {
-                if (id == DBClone[i].ID)
-                {
-                    DBClone[i] = value;
-                    break;
-                }
+                updatedItem.Info = value.Info;
+                updatedItem.KategorieId = value.KategorieId;
+                updatedItem.Parent = value.Parent;
+                updatedItem.Pos = value.Pos;
+                updatedItem.Typ = value.Typ;
+                updatedItem.WichtigInfo = value.WichtigInfo;
+                updatedItem.WichtigMöglich = value.WichtigMöglich;
+                updatedItem.Zusammenführen = value.Zusammenführen;
+                updatedItem.Bez = value.Bez;
+                updatedItem.BezWeb = value.BezWeb;
             }
+            else
+                return new HttpResponseMessage(HttpStatusCode.NotFound);
+
+            return new HttpResponseMessage(HttpStatusCode.OK);
         }
 
-        // DELETE api/<ProfilMerkmalController>/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
+        /// <summary>
+        /// Delete Item by ID
+        /// </summary>
+        /// <param name="id"></param>
+        [HttpDelete()]
+        public HttpResponseMessage Delete(int id)
         {
-            var itemToRemove = DBClone.Single(r => r.ID == id);
-            DBClone.Remove(itemToRemove);
+            var updatedItem = DataBaseCsharp.ListofMerkmale.FirstOrDefault(x => x.ID == id);
+
+
+            return new HttpResponseMessage(HttpStatusCode.OK);
         }
     }
 }

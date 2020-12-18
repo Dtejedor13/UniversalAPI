@@ -4,5 +4,37 @@
         <name>UniversalAPI</name>
     </assembly>
     <members>
+        <member name="M:UniversalAPI.Controllers.ProfilMerkmalController.Get">
+            <summary>
+            Get All Items 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:UniversalAPI.Controllers.ProfilMerkmalController.Get(System.Int32)">
+            <summary>
+            Get One Item by ID
+            </summary>
+            <param name="id">ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:UniversalAPI.Controllers.ProfilMerkmalController.Put(UniversalAPI.ProfilMerkmalModel)">
+            <summary>
+            Insert new Profilmerkmal
+            </summary>
+            <param name="value">Object ProfilmerkmalModel</param>
+        </member>
+        <member name="M:UniversalAPI.Controllers.ProfilMerkmalController.Post(UniversalAPI.ProfilMerkmalModel)">
+            <summary>
+            Update Profilmerkmal 
+            </summary>
+            <param name="value">Object ProfilmerkmalModel</param>
+            <returns></returns>
+        </member>
+        <member name="M:UniversalAPI.Controllers.ProfilMerkmalController.Delete(System.Int32)">
+            <summary>
+            Delete Item by ID
+            </summary>
+            <param name="id"></param>
+        </member>
     </members>
 </doc>

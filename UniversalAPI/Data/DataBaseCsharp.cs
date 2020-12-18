@@ -3,12 +3,13 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Collections.Concurrent;
 
 namespace UniversalAPI
 {
     public static class DataBaseCsharp
     {
-        public static List<ProfilMerkmalModel> ListofMerkmale = new List<ProfilMerkmalModel>()
+        public static ConcurrentBag<ProfilMerkmalModel> ListofMerkmale = new ConcurrentBag<ProfilMerkmalModel>()
         {
             new ProfilMerkmalModel { ID = 6,  Parent = 0, Pos = 1, Typ = 1, Bez = "Personenprofilmerkmale", BezWeb = null, Info = null, WichtigMöglich = true, WichtigInfo = null, Zusammenführen = false, DuplizierenMöglich = true },
             new ProfilMerkmalModel { ID = 16, Parent = 0, Pos = 2, Typ = 1, Bez = "Adressenprofilmerkmale", BezWeb = null, Info = null, WichtigMöglich = true, WichtigInfo = null, Zusammenführen = false, DuplizierenMöglich = true },

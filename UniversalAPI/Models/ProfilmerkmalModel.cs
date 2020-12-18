@@ -1,6 +1,8 @@
-﻿namespace UniversalAPI
+﻿using System;
+
+namespace UniversalAPI
 {
-    public class ProfilMerkmalModel
+    public class ProfilMerkmalModel : IDisposable
     {
         public int ID { get; set; }
         public int Parent { get; set; }
@@ -14,5 +16,10 @@
         public bool DuplizierenMöglich { get; set; }
         public bool Zusammenführen { get; set; }
         public int Pos { get; set; }
+
+        public void Dispose()
+        {
+            
+        }
     }
 }
