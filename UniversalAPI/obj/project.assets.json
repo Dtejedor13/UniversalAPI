@@ -7285,7 +7285,7 @@
     "version": "1.0.0",
     "restore": {
       "projectUniqueName": "\\\\rto.de\\Home-Daten\\Home\\D.Tejedor\\Eigene Dateien\\GitHub\\UniversalAPI\\UniversalAPI\\UniversalAPI.csproj",
-      "projectName": "UniversalAPI",
+      "projectName": ".",
       "projectPath": "\\\\rto.de\\Home-Daten\\Home\\D.Tejedor\\Eigene Dateien\\GitHub\\UniversalAPI\\UniversalAPI\\UniversalAPI.csproj",
       "packagesPath": "C:\\Users\\D.tejedor\\.nuget\\packages\\",
       "outputPath": "\\\\rto.de\\Home-Daten\\Home\\D.Tejedor\\Eigene Dateien\\GitHub\\UniversalAPI\\UniversalAPI\\obj\\",

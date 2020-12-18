@@ -11,7 +11,7 @@
 using System;
 using System.Reflection;
 
-[assembly: Microsoft.AspNetCore.Mvc.ApplicationParts.RelatedAssemblyAttribute("UniversalAPI.Views")]
+[assembly: Microsoft.AspNetCore.Mvc.ApplicationParts.RelatedAssemblyAttribute("..Views")]
 
 // Von der MSBuild WriteCodeFragment-Klasse generiert.
 

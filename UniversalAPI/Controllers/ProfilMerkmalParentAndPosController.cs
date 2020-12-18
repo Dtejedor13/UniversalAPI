@@ -27,8 +27,8 @@ namespace UniversalAPI.Controllers
 
             foreach (var element in DataBaseCsharp.ListofMerkmale)
             {
-                if (element.Parent == id)
-                    returnedList.Add(element.Bez);
+                if (element.meta.Parent == id)
+                    returnedList.Add(element.meta.Bez);
             }
 
             return returnedList.ToArray();

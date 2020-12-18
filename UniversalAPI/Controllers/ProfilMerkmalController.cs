@@ -18,7 +18,17 @@ namespace UniversalAPI.Controllers
         [HttpGet]
         public List<ProfilMerkmalModel> Get()
         {
-            return DataBaseCsharp.ListofMerkmale.ToList();
+            List<ProfilMerkmalModel> returnlist = new List<ProfilMerkmalModel>();
+
+            foreach (var element in DataBaseCsharp.ListofMerkmale)
+            {
+                if (element.Delete == false)
+                {
+                    returnlist.Add(element.meta);
+                }
+            }
+
+            return returnlist;
         }
 
         /// <summary>
@@ -29,7 +39,12 @@ namespace UniversalAPI.Controllers
         [HttpGet("{id}")]
         public ProfilMerkmalModel Get(int id)
         {
-            return DataBaseCsharp.ListofMerkmale.Where(x => x.ID == id).FirstOrDefault();
+            var returnobj = DataBaseCsharp.ListofMerkmale.Where(x => x.meta.ID == id).FirstOrDefault();
+
+            if (returnobj.Delete == false)
+                return returnobj.meta;
+            else
+                return null;
         }
 
         /// <summary>
@@ -39,7 +54,10 @@ namespace UniversalAPI.Controllers
         [HttpPut]
         public void Put(ProfilMerkmalModel value)
         {
-            DataBaseCsharp.ListofMerkmale.Add(value);
+            var existingItem = DataBaseCsharp.ListofMerkmale.FirstOrDefault(x => x.meta.ID == value.ID );
+
+            if(existingItem == null || existingItem.Delete == true)
+                DataBaseCsharp.ListofMerkmale.Add(new Models.ProfiilMerkmalPack(value));
         }
 
         /// <summary>
@@ -50,20 +68,20 @@ namespace UniversalAPI.Controllers
         [HttpPost()]
         public HttpResponseMessage Post([FromBody] ProfilMerkmalModel value)
         {
-            var updatedItem = DataBaseCsharp.ListofMerkmale.FirstOrDefault(x => x.ID == value.ID);
+            var updatedItem = DataBaseCsharp.ListofMerkmale.FirstOrDefault(x => x.meta.ID == value.ID && x.Delete == false);
 
             if (updatedItem != null)
             {
-                updatedItem.Info = value.Info;
-                updatedItem.KategorieId = value.KategorieId;
-                updatedItem.Parent = value.Parent;
-                updatedItem.Pos = value.Pos;
-                updatedItem.Typ = value.Typ;
-                updatedItem.WichtigInfo = value.WichtigInfo;
-                updatedItem.WichtigMöglich = value.WichtigMöglich;
-                updatedItem.Zusammenführen = value.Zusammenführen;
-                updatedItem.Bez = value.Bez;
-                updatedItem.BezWeb = value.BezWeb;
+                updatedItem.meta.Info = value.Info;
+                updatedItem.meta.KategorieId = value.KategorieId;
+                updatedItem.meta.Parent = value.Parent;
+                updatedItem.meta.Pos = value.Pos;
+                updatedItem.meta.Typ = value.Typ;
+                updatedItem.meta.WichtigInfo = value.WichtigInfo;
+                updatedItem.meta.WichtigMöglich = value.WichtigMöglich;
+                updatedItem.meta.Zusammenführen = value.Zusammenführen;
+                updatedItem.meta.Bez = value.Bez;
+                updatedItem.meta.BezWeb = value.BezWeb;
             }
             else
                 return new HttpResponseMessage(HttpStatusCode.NotFound);
@@ -76,10 +94,14 @@ namespace UniversalAPI.Controllers
         /// </summary>
         /// <param name="id"></param>
         [HttpDelete()]
-        public HttpResponseMessage Delete(int id)
+        public HttpResponseMessage Delete([FromBody] ProfilMerkmalModel value)
         {
-            var updatedItem = DataBaseCsharp.ListofMerkmale.FirstOrDefault(x => x.ID == id);
+            var itemToDelete = DataBaseCsharp.ListofMerkmale.FirstOrDefault(x => x.meta.ID == value.ID);
 
+            if (itemToDelete != null && itemToDelete.Delete == false)
+            {
+                itemToDelete.Delete = true;
+            }
 
             return new HttpResponseMessage(HttpStatusCode.OK);
         }

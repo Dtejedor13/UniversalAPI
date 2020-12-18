@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <doc>
     <assembly>
-        <name>UniversalAPI</name>
+        <name>.</name>
     </assembly>
     <members>
         <member name="M:UniversalAPI.Controllers.ProfilMerkmalController.Get">
@@ -30,7 +30,7 @@
             <param name="value">Object ProfilmerkmalModel</param>
             <returns></returns>
         </member>
-        <member name="M:UniversalAPI.Controllers.ProfilMerkmalController.Delete(System.Int32)">
+        <member name="M:UniversalAPI.Controllers.ProfilMerkmalController.Delete(UniversalAPI.ProfilMerkmalModel)">
             <summary>
             Delete Item by ID
             </summary>

@@ -13,12 +13,12 @@ using System.Reflection;
 
 [assembly: Microsoft.AspNetCore.Mvc.ApplicationParts.ProvideApplicationPartFactoryAttribute("Microsoft.AspNetCore.Mvc.ApplicationParts.CompiledRazorAssemblyApplicationPartFac" +
     "tory, Microsoft.AspNetCore.Mvc.Razor")]
-[assembly: System.Reflection.AssemblyCompanyAttribute("UniversalAPI")]
+[assembly: System.Reflection.AssemblyCompanyAttribute(".")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
-[assembly: System.Reflection.AssemblyProductAttribute("UniversalAPI")]
+[assembly: System.Reflection.AssemblyProductAttribute(".")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
-[assembly: System.Reflection.AssemblyTitleAttribute("UniversalAPI.Views")]
+[assembly: System.Reflection.AssemblyTitleAttribute("..Views")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Von der MSBuild WriteCodeFragment-Klasse generiert.

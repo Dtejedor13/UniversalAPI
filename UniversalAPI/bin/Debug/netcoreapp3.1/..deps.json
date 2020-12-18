@@ -22,7 +22,7 @@
   },
   "targets": {
     ".NETCoreApp,Version=v3.1": {
-      "UniversalAPI/1.0.0": {
+      "./1.0.0": {
         "dependencies": {
           "EFDataAcsess": "1.0.0",
           "Microsoft.AspNet.WebApi.Cors": "5.2.7",
@@ -299,10 +299,10 @@
           "WindowsBase": "4.0.0.0"
         },
         "runtime": {
-          "UniversalAPI.dll": {}
+          "..dll": {}
         },
         "compile": {
-          "UniversalAPI.dll": {}
+          "..dll": {}
         }
       },
       "Microsoft.AspNet.Cors/5.2.7": {
@@ -3382,7 +3382,7 @@
     }
   },
   "libraries": {
-    "UniversalAPI/1.0.0": {
+    "./1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
