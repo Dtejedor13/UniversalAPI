@@ -41,8 +41,13 @@ namespace UniversalAPI.Controllers
         {
             var returnobj = DataBaseCsharp.ListofMerkmale.Where(x => x.meta.ID == id).FirstOrDefault();
 
-            if (returnobj.Delete == false)
-                return returnobj.meta;
+            if (returnobj != null)
+            {
+                if (returnobj.Delete == false)
+                    return returnobj.meta;
+                else
+                    return null;
+            }
             else
                 return null;
         }
