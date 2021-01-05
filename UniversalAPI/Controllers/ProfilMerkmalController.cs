@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
@@ -12,7 +11,7 @@ namespace UniversalAPI.Controllers
     public class ProfilMerkmalController : ControllerBase
     {
         /// <summary>
-        /// Get All Items 
+        /// Get All ProfilMerkmal Objects 
         /// </summary>
         /// <returns></returns>
         [HttpGet]
@@ -32,7 +31,7 @@ namespace UniversalAPI.Controllers
         }
 
         /// <summary>
-        /// Get One Item by ID
+        /// Get One ProfilMerkmal Object by ID
         /// </summary>
         /// <param name="id">ID</param>
         /// <returns></returns>
@@ -53,20 +52,25 @@ namespace UniversalAPI.Controllers
         }
 
         /// <summary>
-        /// Insert new Profilmerkmal
+        /// Insert new Profilmerkmal Object
         /// </summary>
         /// <param name="value">Object ProfilmerkmalModel</param>
         [HttpPut]
-        public void Put(ProfilMerkmalModel value)
+        public HttpResponseMessage Put([FromBody] ProfilMerkmalModel value)
         {
-            var existingItem = DataBaseCsharp.ListofMerkmale.FirstOrDefault(x => x.meta.ID == value.ID );
+            var existingItem = DataBaseCsharp.ListofMerkmale.FirstOrDefault(x => x.meta.ID == value.ID);
 
-            if(existingItem == null || existingItem.Delete == true)
-                DataBaseCsharp.ListofMerkmale.Add(new Models.ProfiilMerkmalPack(value));
+            if (existingItem == null || existingItem.Delete == true)
+            {
+                DataBaseCsharp.ListofMerkmale.Add(new Models.ProfiilMerkmalPack(value, false));
+                return new HttpResponseMessage(HttpStatusCode.OK);
+            }
+            else
+                return new HttpResponseMessage(HttpStatusCode.NotFound);
         }
 
         /// <summary>
-        /// Update Profilmerkmal 
+        /// Update Profilmerkmal Object
         /// </summary>
         /// <param name="value">Object ProfilmerkmalModel</param>
         /// <returns></returns>
@@ -95,13 +99,13 @@ namespace UniversalAPI.Controllers
         }
 
         /// <summary>
-        /// Delete Item by ID
+        /// Delete ProfilMerkmal Object
+        /// <param name="id">ID of the ProfilmerkmalModel Object to delete</param>
         /// </summary>
-        /// <param name="id"></param>
-        [HttpDelete()]
-        public HttpResponseMessage Delete([FromBody] ProfilMerkmalModel value)
+        [HttpDelete("{id}")]
+        public HttpResponseMessage Delete(int id)
         {
-            var itemToDelete = DataBaseCsharp.ListofMerkmale.FirstOrDefault(x => x.meta.ID == value.ID);
+            var itemToDelete = DataBaseCsharp.ListofMerkmale.FirstOrDefault(x => x.meta.ID == id);
 
             if (itemToDelete != null && itemToDelete.Delete == false)
             {

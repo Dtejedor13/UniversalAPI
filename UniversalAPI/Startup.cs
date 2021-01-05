@@ -12,6 +12,7 @@ using EFDataAcsess;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.OpenApi.Models;
 
 namespace UniversalAPI
 {
@@ -31,6 +32,11 @@ namespace UniversalAPI
             services.AddDbContext<ProfilMerkmaleContext>();
             services.AddCors();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
+
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "UniversalAPI", Version = "v1" });
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -52,6 +58,13 @@ namespace UniversalAPI
             //app.UseCors(options => options.AllowAnyOrigin());
             app.UseCors(options => options.WithOrigins("http://localhost:8081").AllowAnyMethod().AllowAnyOrigin().AllowAnyHeader()); // website
 
+            app.UseSwagger();
+
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Universal API V1");
+            });
+
             app.UseRouting();
 
             app.UseAuthorization();
@@ -62,6 +75,7 @@ namespace UniversalAPI
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
+
         }
     }
 }

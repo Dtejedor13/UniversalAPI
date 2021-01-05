@@ -8,6 +8,9 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace UniversalAPI.Controllers
 {
+    /// <summary>
+    /// Get ProfilMerkmal Object Interface, (name of Object):string, (ID of Object):Int
+    /// </summary>
     [Route("api/if")]
     [ApiController]
     public class ProfilMerkmalInterfaceController : ControllerBase
@@ -39,21 +42,6 @@ namespace UniversalAPI.Controllers
             }
 
             return returnedList.ToArray();
-        }
-
-        [HttpPost]
-        public void Post([FromBody] string value)
-        {
-        }
-
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
-
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
         }
     }
 }

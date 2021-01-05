@@ -62,7 +62,6 @@
 \\rto.de\Home-Daten\Home\D.Tejedor\Eigene Dateien\GitHub\UniversalAPI\UniversalAPI\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
 \\rto.de\Home-Daten\Home\D.Tejedor\Eigene Dateien\GitHub\UniversalAPI\UniversalAPI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 \\rto.de\Home-Daten\Home\D.Tejedor\Eigene Dateien\GitHub\UniversalAPI\UniversalAPI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-\\rto.de\Home-Daten\Home\D.Tejedor\Eigene Dateien\GitHub\UniversalAPI\UniversalAPI\obj\Debug\netcoreapp3.1\UniversalAPI.csproj.CoreCompileInputs.cache
 \\rto.de\Home-Daten\Home\D.Tejedor\Eigene Dateien\GitHub\UniversalAPI\UniversalAPI\obj\Debug\netcoreapp3.1\UniversalAPI.genruntimeconfig.cache
 \\rto.de\Home-Daten\Home\D.Tejedor\Eigene Dateien\GitHub\UniversalAPI\UniversalAPI\bin\Debug\netcoreapp3.1\Documentation.xml
 \\rto.de\Home-Daten\Home\D.Tejedor\Eigene Dateien\GitHub\UniversalAPI\UniversalAPI\bin\Debug\netcoreapp3.1\EFDataAcsess.dll
@@ -75,7 +74,6 @@
 \\rto.de\Home-Daten\Home\D.Tejedor\Eigene Dateien\GitHub\UniversalAPI\UniversalAPI\bin\Debug\netcoreapp3.1\..pdb
 \\rto.de\Home-Daten\Home\D.Tejedor\Eigene Dateien\GitHub\UniversalAPI\UniversalAPI\bin\Debug\netcoreapp3.1\..Views.dll
 \\rto.de\Home-Daten\Home\D.Tejedor\Eigene Dateien\GitHub\UniversalAPI\UniversalAPI\bin\Debug\netcoreapp3.1\..Views.pdb
-\\rto.de\Home-Daten\Home\D.Tejedor\Eigene Dateien\GitHub\UniversalAPI\UniversalAPI\obj\Debug\netcoreapp3.1\..MvcApplicationPartsAssemblyInfo.cache
 \\rto.de\Home-Daten\Home\D.Tejedor\Eigene Dateien\GitHub\UniversalAPI\UniversalAPI\obj\Debug\netcoreapp3.1\..TagHelpers.input.cache
 \\rto.de\Home-Daten\Home\D.Tejedor\Eigene Dateien\GitHub\UniversalAPI\UniversalAPI\obj\Debug\netcoreapp3.1\..TagHelpers.output.cache
 \\rto.de\Home-Daten\Home\D.Tejedor\Eigene Dateien\GitHub\UniversalAPI\UniversalAPI\obj\Debug\netcoreapp3.1\..Views.pdb
@@ -83,3 +81,10 @@
 \\rto.de\Home-Daten\Home\D.Tejedor\Eigene Dateien\GitHub\UniversalAPI\UniversalAPI\obj\Debug\netcoreapp3.1\staticwebassets\..StaticWebAssets.xml
 \\rto.de\Home-Daten\Home\D.Tejedor\Eigene Dateien\GitHub\UniversalAPI\UniversalAPI\obj\Debug\netcoreapp3.1\..dll
 \\rto.de\Home-Daten\Home\D.Tejedor\Eigene Dateien\GitHub\UniversalAPI\UniversalAPI\obj\Debug\netcoreapp3.1\..pdb
+\\rto.de\Home-Daten\Home\D.Tejedor\Eigene Dateien\GitHub\UniversalAPI\UniversalAPI\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+\\rto.de\Home-Daten\Home\D.Tejedor\Eigene Dateien\GitHub\UniversalAPI\UniversalAPI\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+\\rto.de\Home-Daten\Home\D.Tejedor\Eigene Dateien\GitHub\UniversalAPI\UniversalAPI\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+\\rto.de\Home-Daten\Home\D.Tejedor\Eigene Dateien\GitHub\UniversalAPI\UniversalAPI\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+\\rto.de\Home-Daten\Home\D.Tejedor\Eigene Dateien\GitHub\UniversalAPI\UniversalAPI\obj\Debug\netcoreapp3.1\UniversalAPI.csproj.CoreCompileInputs.cache
+\\rto.de\Home-Daten\Home\D.Tejedor\Eigene Dateien\GitHub\UniversalAPI\UniversalAPI\obj\Debug\netcoreapp3.1\..MvcApplicationPartsAssemblyInfo.cs
+\\rto.de\Home-Daten\Home\D.Tejedor\Eigene Dateien\GitHub\UniversalAPI\UniversalAPI\obj\Debug\netcoreapp3.1\..MvcApplicationPartsAssemblyInfo.cache

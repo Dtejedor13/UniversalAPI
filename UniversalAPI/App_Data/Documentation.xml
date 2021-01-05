@@ -6,35 +6,45 @@
     <members>
         <member name="M:UniversalAPI.Controllers.ProfilMerkmalController.Get">
             <summary>
-            Get All Items 
+            Get All ProfilMerkmal Objects 
             </summary>
             <returns></returns>
         </member>
         <member name="M:UniversalAPI.Controllers.ProfilMerkmalController.Get(System.Int32)">
             <summary>
-            Get One Item by ID
+            Get One ProfilMerkmal Object by ID
             </summary>
             <param name="id">ID</param>
             <returns></returns>
         </member>
         <member name="M:UniversalAPI.Controllers.ProfilMerkmalController.Put(UniversalAPI.ProfilMerkmalModel)">
             <summary>
-            Insert new Profilmerkmal
+            Insert new Profilmerkmal Object
             </summary>
             <param name="value">Object ProfilmerkmalModel</param>
         </member>
         <member name="M:UniversalAPI.Controllers.ProfilMerkmalController.Post(UniversalAPI.ProfilMerkmalModel)">
             <summary>
-            Update Profilmerkmal 
+            Update Profilmerkmal Object
             </summary>
             <param name="value">Object ProfilmerkmalModel</param>
             <returns></returns>
         </member>
-        <member name="M:UniversalAPI.Controllers.ProfilMerkmalController.Delete(UniversalAPI.ProfilMerkmalModel)">
+        <member name="M:UniversalAPI.Controllers.ProfilMerkmalController.Delete(System.Int32)">
             <summary>
-            Delete Item by ID
+            Delete ProfilMerkmal Object
+            <param name="id">ID of the ProfilmerkmalModel Object to delete</param>
             </summary>
-            <param name="id"></param>
+        </member>
+        <member name="T:UniversalAPI.Controllers.ProfilMerkmalInterfaceController">
+            <summary>
+            Get ProfilMerkmal Object Interface, (name of Object):string, (ID of Object):Int
+            </summary>
+        </member>
+        <member name="T:UniversalAPI.Controllers.ProfilMerkmalVorlageController">
+            <summary>
+            return empty Profilmerkmal Object as sample or Mockup To Create a new Object
+            </summary>
         </member>
     </members>
 </doc>
