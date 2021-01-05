@@ -11,7 +11,7 @@ namespace UniversalAPI.Controllers
     /// <summary>
     /// Get ProfilMerkmal Object Interface, (name of Object):string, (ID of Object):Int
     /// </summary>
-    [Route("api/if")]
+    [Route("api/pmif")]
     [ApiController]
     public class ProfilMerkmalInterfaceController : ControllerBase
     {

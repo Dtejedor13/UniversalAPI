@@ -87,7 +87,7 @@ namespace UniversalAPI.Controllers
                 updatedItem.meta.Pos = value.Pos;
                 updatedItem.meta.Typ = value.Typ;
                 updatedItem.meta.WichtigInfo = value.WichtigInfo;
-                updatedItem.meta.WichtigMöglich = value.WichtigMöglich;
+                updatedItem.meta.DuplizierenMöglich = value.DuplizierenMöglich;
                 updatedItem.meta.Zusammenführen = value.Zusammenführen;
                 updatedItem.meta.Bez = value.Bez;
                 updatedItem.meta.BezWeb = value.BezWeb;
