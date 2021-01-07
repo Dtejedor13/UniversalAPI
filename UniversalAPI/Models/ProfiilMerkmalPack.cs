@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EFDataAccessCore.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -10,10 +11,10 @@ namespace UniversalAPI.Models
         public ProfiilMerkmalPack(ProfilMerkmalModel meta, bool delete = false)
         {
             Delete = delete;
-            this.meta = meta;
+            this.Meta = meta;
         }
 
         public bool Delete { get; set; }
-        public ProfilMerkmalModel meta { get; set; }
+        public ProfilMerkmalModel Meta { get; set; }
     }
 }

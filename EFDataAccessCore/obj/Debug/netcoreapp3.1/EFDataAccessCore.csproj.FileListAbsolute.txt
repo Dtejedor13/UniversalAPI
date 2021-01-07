@@ -1,0 +1,12 @@
+\\rto.de\Home-Daten\Home\D.Tejedor\Eigene Dateien\GitHub\UniversalAPI\EFDataAccessCore\bin\Debug\netcoreapp3.1\EFDataAccessCore.deps.json
+\\rto.de\Home-Daten\Home\D.Tejedor\Eigene Dateien\GitHub\UniversalAPI\EFDataAccessCore\bin\Debug\netcoreapp3.1\EFDataAccessCore.dll
+\\rto.de\Home-Daten\Home\D.Tejedor\Eigene Dateien\GitHub\UniversalAPI\EFDataAccessCore\obj\Debug\netcoreapp3.1\EFDataAccessCore.csprojAssemblyReference.cache
+\\rto.de\Home-Daten\Home\D.Tejedor\Eigene Dateien\GitHub\UniversalAPI\EFDataAccessCore\obj\Debug\netcoreapp3.1\EFDataAccessCore.AssemblyInfoInputs.cache
+\\rto.de\Home-Daten\Home\D.Tejedor\Eigene Dateien\GitHub\UniversalAPI\EFDataAccessCore\obj\Debug\netcoreapp3.1\EFDataAccessCore.AssemblyInfo.cs
+\\rto.de\Home-Daten\Home\D.Tejedor\Eigene Dateien\GitHub\UniversalAPI\EFDataAccessCore\bin\Debug\netcoreapp3.1\EFDataAccessCore.runtimeconfig.json
+\\rto.de\Home-Daten\Home\D.Tejedor\Eigene Dateien\GitHub\UniversalAPI\EFDataAccessCore\bin\Debug\netcoreapp3.1\EFDataAccessCore.runtimeconfig.dev.json
+\\rto.de\Home-Daten\Home\D.Tejedor\Eigene Dateien\GitHub\UniversalAPI\EFDataAccessCore\obj\Debug\netcoreapp3.1\EFDataAccessCore.genruntimeconfig.cache
+\\rto.de\Home-Daten\Home\D.Tejedor\Eigene Dateien\GitHub\UniversalAPI\EFDataAccessCore\bin\Debug\netcoreapp3.1\EFDataAccessCore.pdb
+\\rto.de\Home-Daten\Home\D.Tejedor\Eigene Dateien\GitHub\UniversalAPI\EFDataAccessCore\obj\Debug\netcoreapp3.1\EFDataAccessCore.dll
+\\rto.de\Home-Daten\Home\D.Tejedor\Eigene Dateien\GitHub\UniversalAPI\EFDataAccessCore\obj\Debug\netcoreapp3.1\EFDataAccessCore.pdb
+\\rto.de\Home-Daten\Home\D.Tejedor\Eigene Dateien\GitHub\UniversalAPI\EFDataAccessCore\obj\Debug\netcoreapp3.1\EFDataAccessCore.csproj.CoreCompileInputs.cache

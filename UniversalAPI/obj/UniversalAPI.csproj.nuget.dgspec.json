@@ -4,14 +4,14 @@
     "\\\\rto.de\\Home-Daten\\Home\\D.Tejedor\\Eigene Dateien\\GitHub\\UniversalAPI\\UniversalAPI\\UniversalAPI.csproj": {}
   },
   "projects": {
-    "\\\\rto.de\\Home-Daten\\Home\\D.Tejedor\\Eigene Dateien\\GitHub\\UniversalAPI\\EFDataAcsess\\EFDataAcsess.csproj": {
+    "\\\\rto.de\\Home-Daten\\Home\\D.Tejedor\\Eigene Dateien\\GitHub\\UniversalAPI\\EFDataAccessCore\\EFDataAccessCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "\\\\rto.de\\Home-Daten\\Home\\D.Tejedor\\Eigene Dateien\\GitHub\\UniversalAPI\\EFDataAcsess\\EFDataAcsess.csproj",
-        "projectName": "EFDataAcsess",
-        "projectPath": "\\\\rto.de\\Home-Daten\\Home\\D.Tejedor\\Eigene Dateien\\GitHub\\UniversalAPI\\EFDataAcsess\\EFDataAcsess.csproj",
+        "projectUniqueName": "\\\\rto.de\\Home-Daten\\Home\\D.Tejedor\\Eigene Dateien\\GitHub\\UniversalAPI\\EFDataAccessCore\\EFDataAccessCore.csproj",
+        "projectName": "EFDataAccessCore",
+        "projectPath": "\\\\rto.de\\Home-Daten\\Home\\D.Tejedor\\Eigene Dateien\\GitHub\\UniversalAPI\\EFDataAccessCore\\EFDataAccessCore.csproj",
         "packagesPath": "C:\\Users\\D.tejedor\\.nuget\\packages\\",
-        "outputPath": "\\\\rto.de\\Home-Daten\\Home\\D.Tejedor\\Eigene Dateien\\GitHub\\UniversalAPI\\EFDataAcsess\\obj\\",
+        "outputPath": "\\\\rto.de\\Home-Daten\\Home\\D.Tejedor\\Eigene Dateien\\GitHub\\UniversalAPI\\EFDataAccessCore\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -22,7 +22,7 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\NuGetDefaults.Config"
         ],
         "originalTargetFrameworks": [
-          "netstandard2.1"
+          "netcoreapp3.1"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -31,7 +31,7 @@
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netstandard2.1": {
+          "netcoreapp3.1": {
             "projectReferences": {}
           }
         },
@@ -42,11 +42,31 @@
         }
       },
       "frameworks": {
-        "netstandard2.1": {
+        "netcoreapp3.1": {
           "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.78, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[5.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.2, )"
             }
           },
           "imports": [
@@ -60,7 +80,7 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "NETStandard.Library": {
+            "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
@@ -97,8 +117,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "\\\\rto.de\\Home-Daten\\Home\\D.Tejedor\\Eigene Dateien\\GitHub\\UniversalAPI\\EFDataAcsess\\EFDataAcsess.csproj": {
-                "projectPath": "\\\\rto.de\\Home-Daten\\Home\\D.Tejedor\\Eigene Dateien\\GitHub\\UniversalAPI\\EFDataAcsess\\EFDataAcsess.csproj"
+              "\\\\rto.de\\Home-Daten\\Home\\D.Tejedor\\Eigene Dateien\\GitHub\\UniversalAPI\\EFDataAccessCore\\EFDataAccessCore.csproj": {
+                "projectPath": "\\\\rto.de\\Home-Daten\\Home\\D.Tejedor\\Eigene Dateien\\GitHub\\UniversalAPI\\EFDataAccessCore\\EFDataAccessCore.csproj"
               }
             }
           }
@@ -116,7 +136,17 @@
               "target": "Package",
               "version": "[5.2.7, )"
             },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[5.0.1, )"
             },

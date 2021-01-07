@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -24,7 +21,7 @@ namespace UniversalAPI.Controllers
             {
                 if (element.Delete == false)
                 {
-                    returnList.Add(new ProfilMerkmalInterfaceDynamicObjectModel(element.meta.ID, element.meta.Bez));        
+                    returnList.Add(new ProfilMerkmalInterfaceDynamicObjectModel(element.Meta.ID, element.Meta.Bez));        
                 }
             }
             return returnList;
@@ -37,8 +34,8 @@ namespace UniversalAPI.Controllers
 
             foreach (var element in DataBaseCsharp.ListofMerkmale)
             {
-                if (element.meta.Parent == id && element.Delete == false)
-                    returnedList.Add(element.meta.Bez);
+                if (element.Meta.Parent == id && element.Delete == false)
+                    returnedList.Add(element.Meta.Bez);
             }
 
             return returnedList.ToArray();

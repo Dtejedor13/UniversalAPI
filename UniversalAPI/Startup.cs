@@ -8,11 +8,12 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using EFDataAcsess;
+using EFDataAccessCore;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.OpenApi.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace UniversalAPI
 {
@@ -28,8 +29,16 @@ namespace UniversalAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            DataBaseCsharp.LoadDatafromDB(); // static dataload
+
             services.AddControllersWithViews();
-            services.AddDbContext<ProfilMerkmaleContext>();
+            services.AddDbContext<ProfilMerkMaleContext>(options =>
+            {
+                options.UseSqlServer(Configuration.GetConnectionString("Default"),
+                x => x.MigrationsAssembly("UniversalAPI.Migrations"));
+            }); // Entity FrameWork
+            //services.AddRazorPages();
+
             services.AddCors();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
 
@@ -50,7 +59,7 @@ namespace UniversalAPI
             {
                 app.UseExceptionHandler("/Home/Error");
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-                app.UseHsts();
+                app.UseHsts(); 
             }
             app.UseHttpsRedirection();
             app.UseStaticFiles();

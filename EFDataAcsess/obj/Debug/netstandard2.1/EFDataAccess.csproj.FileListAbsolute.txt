@@ -1,0 +1,9 @@
+\\rto.de\Home-Daten\Home\D.Tejedor\Eigene Dateien\GitHub\UniversalAPI\EFDataAcsess\bin\Debug\netstandard2.1\EFDataAccess.deps.json
+\\rto.de\Home-Daten\Home\D.Tejedor\Eigene Dateien\GitHub\UniversalAPI\EFDataAcsess\bin\Debug\netstandard2.1\EFDataAccess.dll
+\\rto.de\Home-Daten\Home\D.Tejedor\Eigene Dateien\GitHub\UniversalAPI\EFDataAcsess\bin\Debug\netstandard2.1\EFDataAccess.pdb
+\\rto.de\Home-Daten\Home\D.Tejedor\Eigene Dateien\GitHub\UniversalAPI\EFDataAcsess\obj\Debug\netstandard2.1\EFDataAccess.csprojAssemblyReference.cache
+\\rto.de\Home-Daten\Home\D.Tejedor\Eigene Dateien\GitHub\UniversalAPI\EFDataAcsess\obj\Debug\netstandard2.1\EFDataAccess.AssemblyInfoInputs.cache
+\\rto.de\Home-Daten\Home\D.Tejedor\Eigene Dateien\GitHub\UniversalAPI\EFDataAcsess\obj\Debug\netstandard2.1\EFDataAccess.AssemblyInfo.cs
+\\rto.de\Home-Daten\Home\D.Tejedor\Eigene Dateien\GitHub\UniversalAPI\EFDataAcsess\obj\Debug\netstandard2.1\EFDataAccess.csproj.CoreCompileInputs.cache
+\\rto.de\Home-Daten\Home\D.Tejedor\Eigene Dateien\GitHub\UniversalAPI\EFDataAcsess\obj\Debug\netstandard2.1\EFDataAccess.dll
+\\rto.de\Home-Daten\Home\D.Tejedor\Eigene Dateien\GitHub\UniversalAPI\EFDataAcsess\obj\Debug\netstandard2.1\EFDataAccess.pdb

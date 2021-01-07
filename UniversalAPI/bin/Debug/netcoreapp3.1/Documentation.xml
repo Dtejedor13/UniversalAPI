@@ -17,13 +17,13 @@
             <param name="id">ID</param>
             <returns></returns>
         </member>
-        <member name="M:UniversalAPI.Controllers.ProfilMerkmalController.Put(UniversalAPI.ProfilMerkmalModel)">
+        <member name="M:UniversalAPI.Controllers.ProfilMerkmalController.Put(EFDataAccessCore.Models.ProfilMerkmalModel)">
             <summary>
             Insert new Profilmerkmal Object
             </summary>
             <param name="value">Object ProfilmerkmalModel</param>
         </member>
-        <member name="M:UniversalAPI.Controllers.ProfilMerkmalController.Post(UniversalAPI.ProfilMerkmalModel)">
+        <member name="M:UniversalAPI.Controllers.ProfilMerkmalController.Post(EFDataAccessCore.Models.ProfilMerkmalModel)">
             <summary>
             Update Profilmerkmal Object
             </summary>

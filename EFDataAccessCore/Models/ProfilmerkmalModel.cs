@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace UniversalAPI
+namespace EFDataAccessCore.Models
 {
     public class ProfilMerkmalModel : IDisposable
     {

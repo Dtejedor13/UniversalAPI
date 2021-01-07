@@ -5,8 +5,8 @@ namespace EFDataAcsess
 {
     public class ProfilMerkmaleContext : DbContext
     {
-        public DbSet<ProfilMerkmaleModel> profil { get; set; }
-        public ProfilMerkmaleContext(DbContextOptions options) : base(options) 
+        public DbSet<ProfilMerkmaleModel> profilmerkmal { get; set; }
+        public ProfilMerkmaleContext(DbContextOptions options) : base(options) // Constructor
         {
             
         }

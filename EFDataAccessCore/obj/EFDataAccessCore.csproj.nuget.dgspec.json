@@ -1,0 +1,92 @@
+{
+  "format": 1,
+  "restore": {
+    "\\\\rto.de\\Home-Daten\\Home\\D.Tejedor\\Eigene Dateien\\GitHub\\UniversalAPI\\EFDataAccessCore\\EFDataAccessCore.csproj": {}
+  },
+  "projects": {
+    "\\\\rto.de\\Home-Daten\\Home\\D.Tejedor\\Eigene Dateien\\GitHub\\UniversalAPI\\EFDataAccessCore\\EFDataAccessCore.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "\\\\rto.de\\Home-Daten\\Home\\D.Tejedor\\Eigene Dateien\\GitHub\\UniversalAPI\\EFDataAccessCore\\EFDataAccessCore.csproj",
+        "projectName": "EFDataAccessCore",
+        "projectPath": "\\\\rto.de\\Home-Daten\\Home\\D.Tejedor\\Eigene Dateien\\GitHub\\UniversalAPI\\EFDataAccessCore\\EFDataAccessCore.csproj",
+        "packagesPath": "C:\\Users\\D.tejedor\\.nuget\\packages\\",
+        "outputPath": "\\\\rto.de\\Home-Daten\\Home\\D.Tejedor\\Eigene Dateien\\GitHub\\UniversalAPI\\EFDataAccessCore\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\D.tejedor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\NuGetDefaults.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://baget.rto.de/v3/index.json": {},
+          "http://rtosnuget.rto.de/nuget": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.78, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
