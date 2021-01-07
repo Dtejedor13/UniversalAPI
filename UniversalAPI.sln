@@ -5,9 +5,7 @@ VisualStudioVersion = 16.0.30503.244
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UniversalAPI", "UniversalAPI\UniversalAPI.csproj", "{96C64CEF-8CA6-41E3-8604-39A0B389EEF6}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EFDataAccess", "EFDataAcsess\EFDataAccess.csproj", "{C184AFD9-7E89-488B-BA57-8BF3D28E066C}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFDataAccessCore", "EFDataAccessCore\EFDataAccessCore.csproj", "{5E41264C-89FF-46E2-A358-4C0E5D656608}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EFDataAccessCore", "EFDataAccessCore\EFDataAccessCore.csproj", "{5E41264C-89FF-46E2-A358-4C0E5D656608}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,10 +17,6 @@ Global
 		{96C64CEF-8CA6-41E3-8604-39A0B389EEF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{96C64CEF-8CA6-41E3-8604-39A0B389EEF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{96C64CEF-8CA6-41E3-8604-39A0B389EEF6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C184AFD9-7E89-488B-BA57-8BF3D28E066C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C184AFD9-7E89-488B-BA57-8BF3D28E066C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C184AFD9-7E89-488B-BA57-8BF3D28E066C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C184AFD9-7E89-488B-BA57-8BF3D28E066C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5E41264C-89FF-46E2-A358-4C0E5D656608}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5E41264C-89FF-46E2-A358-4C0E5D656608}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5E41264C-89FF-46E2-A358-4C0E5D656608}.Release|Any CPU.ActiveCfg = Release|Any CPU
