@@ -53,6 +53,27 @@ namespace UniversalAPI.Controllers
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="ParentID">ID of ProfilMerkmal</param>
+        /// <returns></returns>
+        [HttpGet]
+        [Route("parent/{ParentID}")]
+        public List<ProfilMerkmalModel> GetbyParent(int ParentID)
+        {
+            List<ProfilMerkmalModel> returnlist = new List<ProfilMerkmalModel>();
+            foreach (var element in DataBaseCsharp.ListofMerkmale)
+            {
+                if (element.Delete == false && element.Meta.Parent == ParentID)
+                {
+                    returnlist.Add(element.Meta);
+                }
+            }
+
+            return returnlist;
+        }
+
+        /// <summary>
         /// Insert new Profilmerkmal Object
         /// </summary>
         /// <param name="value">Object ProfilmerkmalModel</param>

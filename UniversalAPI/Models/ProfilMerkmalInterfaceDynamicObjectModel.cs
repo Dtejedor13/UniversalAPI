@@ -1,20 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace UniversalAPI
+﻿namespace UniversalAPI
 {
     public class ProfilMerkmalInterfaceDynamicObjectModel
     {
         public int ObjectID { get; set; }
-        
+
         public string Bezeichnung { get; set; }
 
-        public ProfilMerkmalInterfaceDynamicObjectModel(int ID, string bezeichnung)
+        public bool isContainer {get; set;}
+        public ProfilMerkmalInterfaceDynamicObjectModel(int ID, string bezeichnung, bool container)
         {
             ObjectID = ID;
             Bezeichnung = bezeichnung;
+            isContainer = container;
         }
     }
 }

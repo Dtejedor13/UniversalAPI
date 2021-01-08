@@ -17,6 +17,13 @@
             <param name="id">ID</param>
             <returns></returns>
         </member>
+        <member name="M:UniversalAPI.Controllers.ProfilMerkmalController.GetbyParent(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="ParentID">ID of ProfilMerkmal</param>
+            <returns></returns>
+        </member>
         <member name="M:UniversalAPI.Controllers.ProfilMerkmalController.Put(EFDataAccessCore.Models.ProfilMerkmalModel)">
             <summary>
             Insert new Profilmerkmal Object
@@ -40,6 +47,26 @@
             <summary>
             Get ProfilMerkmal Object Interface, (name of Object):string, (ID of Object):Int
             </summary>
+        </member>
+        <member name="M:UniversalAPI.Controllers.ProfilMerkmalInterfaceController.Get">
+            <summary>
+            Return Profil Merkmal Interface
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:UniversalAPI.Controllers.ProfilMerkmalInterfaceController.GetbyParent(System.Int32)">
+            <summary>
+            Returns ProfilMerkmal Interface by ParentID
+            </summary>
+            <param name="ParentID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UniversalAPI.Controllers.ProfilMerkmalInterfaceController.Get(System.Int32)">
+            <summary>
+            Return Profil Merkmal interface by ID
+            </summary>
+            <param name="id">ID</param>
+            <returns></returns>
         </member>
         <member name="T:UniversalAPI.Controllers.ProfilMerkmalVorlageController">
             <summary>
